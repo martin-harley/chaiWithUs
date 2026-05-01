@@ -4,17 +4,23 @@ export default function Home() {
   return (
     <>
       <nav className="fixed top-0 w-full z-50 bg-[#fbfaee]/80 backdrop-blur-xl transition-all duration-300">
-        <div className="flex justify-between items-center px-8 h-20 w-full max-w-screen-2xl mx-auto">
-          <div className="flex items-center gap-12">
-            <img src="/logo_transparent.png" alt="Chai With Us Logo" className="h-[45px] w-auto object-contain" />
-            <div className="hidden md:flex items-center gap-8">
-              <a className="text-[#894d0d] border-b border-[#894d0d] pb-1 font-label text-base italic" href="#">Shop</a>
-              <a className="text-[#1A1A1A] hover:text-[#894d0d] transition-colors font-label text-base italic" href="#">About</a>
-              <a className="text-[#1A1A1A] hover:text-[#894d0d] transition-colors font-label text-base italic" href="#">Learn</a>
-              <a className="text-[#1A1A1A] hover:text-[#894d0d] transition-colors font-label text-base italic" href="#">Subscription</a>
-            </div>
+        <div className="flex justify-between items-center px-8 h-20 w-full max-w-screen-2xl mx-auto relative">
+
+          {/* Left: Logo */}
+          <div className="flex items-center z-10">
+            <img src="/logo_transparent.png" alt="Chai With Us Logo" className="h-[600px] md:h-[210px] w-auto object-contain origin-left" />
           </div>
-          <div className="flex items-center gap-6">
+
+          {/* Center: Links */}
+          <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 items-center gap-8 z-10">
+            <a className="text-[#894d0d] border-b border-[#894d0d] pb-1 font-label text-base italic" href="#">Shop</a>
+            <a className="text-[#1A1A1A] hover:text-[#894d0d] transition-colors font-label text-base italic" href="#">About</a>
+            <a className="text-[#1A1A1A] hover:text-[#894d0d] transition-colors font-label text-base italic" href="#">Learn</a>
+            <a className="text-[#1A1A1A] hover:text-[#894d0d] transition-colors font-label text-base italic" href="#">Subscription</a>
+          </div>
+
+          {/* Right: Icons */}
+          <div className="flex items-center gap-6 z-10">
             <button className="hover:opacity-70 transition-opacity duration-300 active:scale-95">
               <span className="material-symbols-outlined text-primary" data-icon="search">search</span>
             </button>
@@ -46,10 +52,10 @@ export default function Home() {
           </div>
           <div className="relative z-10 px-12 max-w-screen-2xl mx-auto w-full">
             <div className="max-w-2xl">
-              <h1 className="text-7xl font-headline italic leading-[1.1] text-[#3B5B2D] mb-6">
+              <h1 className="text-7xl font-headline italic leading-[1.1] text-[#00000] mb-6">
                 For the Community, <br />by the Community.
               </h1>
-              <p className="text-2xl text-[#3B5B2D] font-body mb-10 italic">
+              <p className="text-2xl text-[#000000] font-body mb-10 italic">
                 Rooted in tradition, crafted for the modern palate. Experience the warmth of heritage in every aromatic sip.
               </p>
             </div>
