@@ -10,8 +10,22 @@ const imFell = IM_Fell_DW_Pica({
 });
 
 export const metadata: Metadata = {
-  title: "Chai With Us | The Editorial Ritual",
-  description: "Crafting intentional moments through the timeless ritual of tea.",
+  title: "Chai With Us | For the Community, By the Community",
+  description: "Rooted in tradition, crafted for the modern palate. Experience the warmth of heritage in every aromatic sip.",
+  openGraph: {
+    images: [
+      {
+        url: "/cwu_logo%20_expanded.JPEG",
+        width: 1200,
+        height: 630,
+        alt: "Chai With Us Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/cwu_logo%20_expanded.JPEG"],
+  },
 };
 
 export default function RootLayout({
