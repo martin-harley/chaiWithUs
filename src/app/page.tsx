@@ -7,8 +7,8 @@ export default function Home() {
         <div className="flex justify-between items-center px-8 h-20 w-full max-w-screen-2xl mx-auto relative">
 
           {/* Left: Logo */}
-          <div className="flex items-center z-10">
-            <img src="/logo_transparent.png" alt="Chai With Us Logo" className="h-[600px] md:h-[210px] w-auto object-contain origin-left" />
+          <div className="absolute left-8 z-10 flex items-center h-full pointer-events-none">
+            <img src="/logo_transparent.png" alt="Chai With Us Logo" className="h-[150px] md:h-[200px] w-auto object-contain origin-left pointer-events-auto" />
           </div>
 
           {/* Center: Links */}
@@ -20,7 +20,7 @@ export default function Home() {
           </div>
 
           {/* Right: Icons */}
-          <div className="flex items-center gap-6 z-10">
+          <div className="flex items-center gap-6 z-10 ml-auto">
             <button className="hover:opacity-70 transition-opacity duration-300 active:scale-95">
               <span className="material-symbols-outlined text-primary" data-icon="search">search</span>
             </button>
