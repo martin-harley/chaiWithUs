@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chai With Us | The Editorial Ritual</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container": "#efeee3",
+              "outline": "#857467",
+              "secondary": "#596332",
+              "error": "#ba1a1a",
+              "on-secondary-fixed-variant": "#424b1d",
+              "inverse-primary": "#ffb77b",
+              "surface-dim": "#dbdbcf",
+              "primary-fixed": "#ffdcc2",
+              "surface-variant": "#e4e3d7",
+              "on-primary-fixed": "#2e1500",
+              "secondary-fixed": "#dde8ab",
+              "secondary-container": "#dde8ab",
+              "on-background": "#1b1c15",
+              "tertiary": "#904917",
+              "background": "#fbfaee",
+              "on-tertiary": "#ffffff",
+              "on-surface": "#1b1c15",
+              "on-secondary": "#ffffff",
+              "inverse-surface": "#303129",
+              "primary-fixed-dim": "#ffb77b",
+              "tertiary-fixed-dim": "#ffb68c",
+              "on-tertiary-fixed-variant": "#753401",
+              "on-primary": "#ffffff",
+              "on-primary-container": "#fffbff",
+              "outline-variant": "#d8c3b4",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#e9e9dd",
+              "on-tertiary-fixed": "#321200",
+              "primary-container": "#a76526",
+              "surface-container-low": "#f5f4e8",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#6d3a00",
+              "on-error-container": "#93000a",
+              "primary": "#894d0d",
+              "surface-bright": "#fbfaee",
+              "on-secondary-fixed": "#181e00",
+              "on-surface-variant": "#524439",
+              "tertiary-fixed": "#ffdbc9",
+              "surface-tint": "#8c4f10",
+              "surface-container-highest": "#e4e3d7",
+              "error-container": "#ffdad6",
+              "on-secondary-container": "#5f6938",
+              "inverse-on-surface": "#f2f1e5",
+              "on-tertiary-container": "#fffbff",
+              "secondary-fixed-dim": "#c1cc91",
+              "surface": "#fbfaee",
+              "tertiary-container": "#ae602d"
+            },
+            fontFamily: {
+              "headline": ["'IM Fell DW Pica'", "serif"],
+              "body": ["'IM Fell DW Pica'", "serif"],
+              "label": ["'IM Fell DW Pica'", "serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
+      }
+      .grainy-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0.03;
+        background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBboDnveQn7GM3UvDrmrSBJPXMPddE7JArdXPE5RHp-2amXuKxPF4ny67-S1DriFSKJ95kESaBGs53VrFwy3wkvWMpyXWQCUGAzEVVg7RSm86RcgA3ERlc3K1Rvf7eKIMi10C78ouozWUA6sLGBVAGl-q8mg4I353E7dnShlQLbmBlF-4gJ_R6twWW09r0_-tZdbgnBBSjZ-sbSxrc1nPjnOgokFTfbzsghiGfVqgnpioFbOi6-bt6znd0h8qeQIHTvFr7JYdi8q6Wg)
+      }
+      body {
+        font-family: 'IM Fell DW Pica', serif;
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<div class="grainy-overlay"></div>
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbfaee]/80 backdrop-blur-xl transition-all duration-300">
+<div class="flex justify-between items-center px-8 h-20 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-12">
+<span class="text-3xl font-headline italic tracking-tight text-[#1A1A1A]">Chai With Us</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#894d0d] border-b border-[#894d0d] pb-1 font-label text-base italic" href="#">Shop</a>
+<a class="text-[#1A1A1A] hover:text-[#894d0d] transition-colors font-label text-base italic" href="#">About</a>
+<a class="text-[#1A1A1A] hover:text-[#894d0d] transition-colors font-label text-base italic" href="#">Learn</a>
+<a class="text-[#1A1A1A] hover:text-[#894d0d] transition-colors font-label text-base italic" href="#">Subscription</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="hover:opacity-70 transition-opacity duration-300 active:scale-95">
+<span class="material-symbols-outlined text-primary" data-icon="search">search</span>
+</button>
+<button class="hover:opacity-70 transition-opacity duration-300 active:scale-95">
+<span class="material-symbols-outlined text-primary" data-icon="person">person</span>
+</button>
+<button class="hover:opacity-70 transition-opacity duration-300 active:scale-95">
+<span class="material-symbols-outlined text-primary" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Section 1: Hero -->
+<section class="relative h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Steaming cup of authentic chai being poured into a clay cup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClPDdeGLXkojo3Pwy2Vj2GiXonehK7SDAu3nxb6PVQH0Zc3im_ncKU1pgyJO9Y1154oIIJvxRmaPpXtyartodbU_Hfkv2xt1Q5jGu77KHuttcLUPrbV-NKFhkJzLKFrQZzDYWt7S5bTW0KgGmt-nGwQywBTG3zNI878SgVKXTkT33uIqfKwicQx5HuVKl6-9OSA942vEe4Hji_c7f1EJf6KQIEgprvTSR7u6EAyOIW-4rMSKnLJUfk_ym21r6aZqdMgjG4Q5OwcqSF"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/60 to-transparent"></div>
+</div>
+<div class="relative z-10 px-12 max-w-screen-2xl mx-auto w-full">
+<div class="max-w-2xl">
+<h1 class="text-7xl font-headline italic leading-[1.1] text-on-surface mb-6">
+                        The Daily Ritual, <br/>Reimagined
+                    </h1>
+<p class="text-2xl text-on-surface-variant font-body mb-10 italic">
+                        Rooted in tradition, crafted for the modern palate. Experience the warmth of heritage in every aromatic sip.
+                    </p>
+<div class="flex items-center gap-6">
+<button class="px-10 py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-sm font-label italic text-lg hover:opacity-90 transition-opacity active:scale-[0.98]">
+                            Shop Our Blends
+                        </button>
+<button class="px-10 py-4 border border-primary/20 text-primary rounded-sm font-label italic text-lg hover:bg-primary/5 transition-colors">
+                            Our Story
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Signature Blend -->
+<section class="py-32 bg-surface">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative aspect-[4/5] bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale-[20%]" data-alt="Close up of raw whole spices including cinnamon and cardamom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE2VNIV1KFP6D5pk1QPuJQuVJQIJMiCdiIE1ZpzrvNeFnh8no3HA2QVnO9A3G4FKTrJiwr0udn1kZYBRC0Vqfws2A-RBq3S9WivgLec9IsxUfOajcDzbYSPNb7Xq74Nzo3diO_-4mcBSNPRNC5_8Y2FLX9PZrCkrTmNCu6Whf59K-mF61Llq31fADGxadaMNjGVVwMkAUdFAKW2h9FXXAv7ThZa6l88kh4TLNQPsJC7hF2nmrL_EP68n5N7b7IELjnDYvzqXBQm7_P"/>
+</div>
+<div class="space-y-12">
+<div class="space-y-4">
+<span class="text-primary font-label italic text-sm">Featured Blend</span>
+<h2 class="text-5xl font-headline text-on-surface leading-tight italic">
+                                The Signature Blend: <br/>Bold. Spicy. Balanced.
+                            </h2>
+</div>
+<p class="text-on-surface-variant text-xl leading-relaxed max-w-lg italic">
+                            Our flagship recipe is a soulful orchestration of hand-picked Assam leaves and mountain-grown spices. A ritual that awakens the senses and grounds the spirit.
+                        </p>
+<div class="flex flex-wrap gap-4">
+<div class="px-6 py-2 bg-surface-variant/50 text-secondary rounded-full font-label italic text-base flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Cardamom
+                            </div>
+<div class="px-6 py-2 bg-surface-variant/50 text-secondary rounded-full font-label italic text-base flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Cinnamon
+                            </div>
+<div class="px-6 py-2 bg-surface-variant/50 text-secondary rounded-full font-label italic text-base flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Black Tea
+                            </div>
+</div>
+<button class="group flex items-center gap-4 text-primary font-label italic text-lg border-b border-primary/20 pb-2 hover:border-primary transition-all">
+                            View Product Details
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Category Grid (Bento Style) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 h-[700px]">
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Signature Chai collection packaging" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOULU080NvruXApT9lRO_Ivk7r9JJ2Eb09MWngSemASb9g8M3_8LjHeztomsRRrToG_ocl42atsjIejPni2mliEsK3CWRSIMWDOLUcb1jUsOXo_e7IYwzPOl23EasZTNkCznapC3LN3IRw-YZ1gPJdKVgHrTFMFPhyvduveKE7ZOHZ6SA15mMXXUgd2m_oZSNtmc9UMCq1gMqnpxYRG426kZ32v7Br8wlnIVk7z4L9fs047mUkfA0DLZzUlsenmDFh7EdB4exTTPH3"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute bottom-10 left-10">
+<h3 class="text-4xl font-headline text-white mb-2 italic">Signature Chai</h3>
+<p class="text-white/80 font-label text-base italic">Explore Blends</p>
+</div>
+</div>
+<div class="md:col-span-2 relative group overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Collection of tea bundles and sets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5AvA-8PStAKP5I1aDtrJBJ5Ir8is5uta8W8_7v1yRJ9qvmyd0dMX8zH76Mym8VnsInZP_eS15ifJ7JrYbvep1Zowio4sx-iV5834r71AL2zv0w6XRWyv7N19f3E3THVqUj6owu4iowSFLs1N_kGw080ZnD-M7Kh-SnZ_99cPqLL2us1VTlOsffWuz-SMNYePqJQP5QiC302iZC3bj5ciuDX20o6GdLTAxOLaEvbHnsnRmt1YYp3myCxYkizJ20cpQY2c3vUjxfHCp"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="text-3xl font-headline text-white mb-2 italic">Bundles</h3>
+<p class="text-white/80 font-label text-base italic">Gift The Ritual</p>
+</div>
+</div>
+<div class="relative group overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Ceramic chai cups and lifestyle accessories" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBehEFYkcY_bwI41nWa_kI2VisUk7vbfWyD3ftDw4It2rMXlXCsyijn9wF0UojpFnp3gz4XieJCUTwImX5MalnJzowBUdKqTLIcXdMA0PVAIjLMIUvBGsW9q5b3sxLgVh0HwB-ch-Uw7WM0X-q_kt8uKTEOMGiLJRVEkAiQW1iM2OnJFcmqZZKY4hlQiSzs6NdjVLeA260FidRc0e9Yf2YTGSwjvdFoEG_9fSAP3Gset6aWMf1AeyzQ6-u0JLLHKsgB8Rse5_9RiaSL"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute bottom-6 left-6">
+<h3 class="text-2xl font-headline text-white italic">Merch</h3>
+</div>
+</div>
+<div class="relative group overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Elegant tea gift boxes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVBgZPzpgPGET1EzrySOniu2GcBP04FV8cpH5ud6RXYttmqmZFHvQsctn00MdHnHmejTRgESe2C_Dx276maIc_OAE58MjeObF8x7szMAFKNtDbEl3hat58L0gybpMs6Lp3QpIY68UxV5KOGTPUkwasuB9FOWlhupS4XGSffwohTJbbYoQJUJ7tJCqhAwUm451N3CrQ25GBb65ZU_aN5clDu_CC1t9_j9sUyeoz9dglpbWXjpgMWsrSv8IovOTo_oI76XGCM03k89iU"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute bottom-6 left-6">
+<h3 class="text-2xl font-headline text-white italic">Gifts</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Brand Narrative -->
+<section class="py-32 bg-surface">
+<div class="max-w-4xl mx-auto px-12 text-center">
+<span class="text-primary font-label italic text-sm mb-8 block">Our Ethos</span>
+<h2 class="text-6xl font-headline italic text-on-surface mb-12">Beyond the Cup</h2>
+<div class="space-y-8 text-2xl leading-relaxed text-on-surface-variant font-body italic">
+<p>We believe that tea is more than a beverage; it is a moment of stillness in a frantic world. Every spice in our blend is sourced through direct-trade relationships with small-scale farmers who treat the earth with the same reverence we do.</p>
+<p>From the high-altitude gardens of Assam to the spice markets of Kerala, we track every leaf. This is craftsmanship you can taste, and transparency you can trust.</p>
+</div>
+<div class="mt-16 pt-16 border-t border-outline-variant/20 grid grid-cols-3 gap-8">
+<div>
+<div class="text-primary text-4xl font-headline mb-2 italic">100%</div>
+<div class="text-on-surface-variant font-label text-xs italic">Organic Sourcing</div>
+</div>
+<div>
+<div class="text-primary text-4xl font-headline mb-2 italic">Direct</div>
+<div class="text-on-surface-variant font-label text-xs italic">Trade Relationships</div>
+</div>
+<div>
+<div class="text-primary text-4xl font-headline mb-2 italic">Pure</div>
+<div class="text-on-surface-variant font-label text-xs italic">Whole Spices</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Educational Hub -->
+<section class="py-24 bg-surface-container-highest/30">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="text-5xl font-headline text-on-surface mb-4 italic">Master the Pour</h2>
+<p class="text-on-surface-variant text-xl italic">The perfect chai is a delicate balance of heat, time, and intention. Learn the traditional methods of brewing that elevate a simple drink into a sanctuary.</p>
+</div>
+<button class="text-primary font-label italic text-lg border-b border-primary/40 pb-1 hover:border-primary transition-colors">View All Rituals</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-6 group cursor-pointer">
+<div class="aspect-square overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close up of water boiling with loose tea leaves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-SGTMs7dFpJSOlTKNJsmeGU1solKT9_1WzNQ2rgzgtD3Pl6a3bIr24HW7WLNYz7LzgGjngDiUNM3bc8N-iQj3Slb37__1jkZLYIuNiUAWuQmGf7BJss7e1Tax-Q6Lhzrb1R4dschiH9eV5IGCrwa-i-kNamYhK451jDbV7CYGNMFPW3X_wyf3e7N7-M2jZY7MSH-nrYPZaiyiHbdXQGn_uGUilmeKDCmn_25bWKQmEikKsiuu4DMmOcrHyASmp235c6UXzw-RjoaQ"/>
+</div>
+<div class="space-y-2">
+<h4 class="text-2xl font-headline italic group-hover:text-primary transition-colors">The Temperature Secret</h4>
+<p class="text-lg text-on-surface-variant leading-relaxed italic">Discover why boiling your milk and tea together creates a deeper, more robust flavor profile.</p>
+</div>
+</div>
+<div class="space-y-6 group cursor-pointer">
+<div class="aspect-square overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Chai being aerated by pouring from a height" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPdBCACDoy-N_ZPzTjmKaDtWrfLW5LTQb-duPGuDHRNZHIQ69CCKjcRjIAmCPMYwpLVfzRNQKNOebmOWhWaIqRezaE8EIlKAdl21x4GvWC7E7YKwsWmlZoKgMnRZy8PVQoZ-XK1hiACHvXvXnSg9TW6yQqo_7ejOaUZPcMuBtsPz5okqKexSdRIogfhJ1SeviCtoNt1NVYkDdCv1T3be_qK2UgBlvuqYWBT07Zu0t__702EZQDzvghlf2o6UCcnFHZwobA-9CY9sUx"/>
+</div>
+<div class="space-y-2">
+<h4 class="text-2xl font-headline italic group-hover:text-primary transition-colors">Aeration &amp; Texture</h4>
+<p class="text-lg text-on-surface-variant leading-relaxed italic">The art of 'pulling' chai to create that signature frothy layer and cool the tea to the perfect temperature.</p>
+</div>
+</div>
+<div class="space-y-6 group cursor-pointer">
+<div class="aspect-square overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Mortar and pestle with crushed cardamom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOPbi3FBGmxHcR3UOJ4jRtgBSXKQ0gyeIi6-3p9z05yoSpn3HDtoMUOz3irglDUXm3bKUMoubaLVPvrY7uzniZiwpDCBHlvHMWZ9X6o1aLRxUrsBdhwZIQFpudO8dxv02W2IYAuQGiZWOKcVc1d9ZKYaBnPs1u8ryPr_m3yMFyAgJCMgm6xj0PcEqwDNctT3ZSVB6iCwCjpCZ40q2fEOTiq_2TITZ9Tmp2f_Kwbdiijk3UKpd7qBjhejBSvLjrqhjgfPdw51Giks5D"/>
+</div>
+<div class="space-y-2">
+<h4 class="text-2xl font-headline italic group-hover:text-primary transition-colors">The Mortar &amp; Pestle</h4>
+<p class="text-lg text-on-surface-variant leading-relaxed italic">Why hand-crushing spices right before brewing unlocks essential oils and aromatics.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Social Proof -->
+<section class="py-32 bg-surface overflow-hidden">
+<div class="max-w-4xl mx-auto px-12">
+<div class="text-center relative">
+<span class="material-symbols-outlined text-primary/20 text-8xl absolute -top-12 -left-12 select-none" data-icon="format_quote">format_quote</span>
+<div class="relative z-10">
+<p class="text-4xl font-headline italic leading-snug mb-8 text-on-surface">
+                            "A truly transformative experience. This isn't just tea; it's a sensory journey that has become the most cherished part of my morning. The spices are so vibrant, you can tell they are fresh."
+                        </p>
+<div class="font-label text-base italic text-primary">Elena Rodriguez — Verified Enthusiast</div>
+</div>
+</div>
+<div class="flex justify-center gap-4 mt-12">
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 7: The Ritual Subscription -->
+<section class="py-24">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="bg-primary/5 p-16 md:p-24 flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 space-y-8">
+<span class="text-primary font-label italic text-sm">Never Run Dry</span>
+<h2 class="text-5xl font-headline text-on-surface italic">The Ritual Subscription</h2>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 text-on-surface-variant text-xl italic">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+                                Save 15% on every shipment
+                            </li>
+<li class="flex items-center gap-4 text-on-surface-variant text-xl italic">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+                                Flexible delivery cycles (2, 4, or 8 weeks)
+                            </li>
+<li class="flex items-center gap-4 text-on-surface-variant text-xl italic">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+                                Early access to seasonal spice blends
+                            </li>
+</ul>
+<button class="px-12 py-5 bg-primary text-on-primary rounded-sm font-label italic text-lg hover:bg-primary-container transition-colors">Subscribe &amp; Save</button>
+</div>
+<div class="flex-1">
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/10 -rotate-2"></div>
+<img class="relative z-10 w-full h-auto grayscale-[10%] shadow-2xl" data-alt="Beautifully packaged tea delivery box" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjoBo09PJGTFwLXOLuXutHzuzCErcHHlurlWt449MInwwROg-VRqI0cusMeij4q4bl1W_yXfjOkjGQPQK0021m6GLneLzZs398p6KQbfBPP8It7EszkQ-yaqu-AkKRdGoU_685olTgYGN44clxCzW8biBUr5GohYroaYCL7ndsLr2jTUEBxf7Te30_FvngJveHQcKUujVMc3pmy1_-OTSRWi1qeveFh469UHFZMm8v36A5lLTuIP73sQb8jp5B78LS3KVrEnitpoZ_"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 8: Instagram Community -->
+<section class="py-24 bg-surface">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-4xl font-headline italic">Community Rituals</h2>
+<p class="font-label text-base italic text-on-surface-variant">Tag @ChaiWithUs to be featured</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
+<div class="aspect-square relative group cursor-pointer overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="User lifestyle photo with chai" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUO2YxlLYX3eMAY-Axko_J8iprjkrAXhhEuVAs9fD0C_q3fq1aU2TGfszjqQJ2ijlg4cYz-S5n5VNnagKBqHFjJHU4o02vts5tQcopXoGeuCbjEykU3YKqhBbcd4dEzFWNIGUHa-zB3pySYHhhA8fPfwyeac8Ut73jl63X1IK6NoRLsn1pzqfW4LF-6lu4XGGvOrYsF3cogWB1dM-zOhycyuqusPhTIJ1Kp4EuF16EwRMa6eGrgS92s1UZiGd4onO41mUAVFFseBQC"/>
+</div>
+<div class="aspect-square relative group cursor-pointer overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Aesthetic chai morning routine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_UYZMc8PXEMmOT-i5dqYDO45j0yURn61IEh_6rAT3vgwUrMrRI2fR4yGHYP3PSf9HdmcayA-Pw4dv1I8XqiYIGUAERK1VhYpzXOwwgEXZxBKMo_IwZtPWbpVc38pyMCSuFsMTNvhx4Zkv7ANazMyM6Krc-57nMCjxmMC_M60kNkt6Sk3rNOkriQ_HB_myteAk8DjBJVJurnKl-0LqFOLfFo14qX3elyzDWqHnJG1TNVTgO9s_Ay-hBxrAjneaiZbbUq48sHVlNJK1"/>
+</div>
+<div class="aspect-square relative group cursor-pointer overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Chai and book aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVMEZQKPT4I8jNb60rdrVDYNv1EfM81e8PhGwN_OZxs7mySZ3LrJfASow4GCkx4172aCAHo_7iTOG_XEDmZsGEJBkyCsNDjswgLnvQ_5GhFwWjHjkAENX_40K4AwumDRl2PPJHq8RxIJAhXbDy4JLB-cjhKzciyXHm-pr34pGbB0vPllnLtI00Ys3YN4AgwbEFnfqZ0Uey7c_OsIjkqZQAMcAUK0Jdns1IazaqJrEa1y9jBwxAoHmf4zHz5nw9JlLIhshyD5n9rrlQ"/>
+</div>
+<div class="aspect-square relative group cursor-pointer overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Ingredients for chai" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlulPBVSSfzyYiYxc4DR6UuGPSla0Eg11Si73M5FMVCY-VP2hRP0a0UFojJ9ERRzfI2IPevZH6j33QgwwpUv1Opd6huP4qgEeqjnA-2jUYE_wrwUVglhkDq1e5bmiGYbHcGnkrKyLhw99l5K1qzNJUlQCvI4SWh5pOBsbAGjJ4IrkahhaQccK7YJeXLS_sWZYfkXMTTMpCVFqTioa5h83chDjR0nfe7J_qUa4FmD2hhkKj_EayXGILjPiKYgv9jtnjNJdFLW2ejO9T"/>
+</div>
+<div class="aspect-square relative group cursor-pointer overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Steaming mug of tea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPzyHEGBwwbnHq-TP8RtmBmP-6iqaDb9yj4aOa2Vy-QlBNe-zq0JbGSpxT5ievLfLAHF4NbB1M8MXFkUe2H9_l4S4cxhaibaJJ960pwzI6AGjAyKR4K9URGRTitHZqWzOU1KL2ChvB0tph17o13_fHMy3Qcq5dL6omKLJC2TrvHs-LBLM6kfFHelSEsh37BqCmAmfX6MJUAuLOqUv1Qj9f_YYEwM7BosBYRvCnQi5aQeWfQUn9Rv8Oc_CWPGW-hYkal5VjhW93Z3uZ"/>
+</div>
+<div class="aspect-square relative group cursor-pointer overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Cozy chai drinking setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHEgADP6x_nXxiHt4blEtkH1Z2CaPff_JngYaEM9jrETfLAYcx78mXtaPlk6KBlGSNOBROIvBhmSBXkuNFNILlgmX7vPW_S34Vrj0wS19YugKQSB2Ry8DiKB9dl48gfQGUG28MzUop0uFhdPckcNpM9IIUEBm7eXwdgeFIh_4H-zJHukTcUHW1Mnqf5bHM3wmDr7Ew-LwJwVC3Zs-zx5S3g2OWl3_46PuPtx8-Fo8cMD4zgHeAHq0_u8igFzM0Uex84DOiYF_W8GG2"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f4f3e1] dark:bg-[#141414] w-full pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<span class="text-2xl font-headline italic text-[#1A1A1A]">Chai With Us</span>
+<p class="text-[#1A1A1A]/60 font-body text-base leading-relaxed italic">Crafting intentional moments through the timeless ritual of tea. Join us in the slow movement.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="public">public</span>
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="share">share</span>
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="mail">mail</span>
+</div>
+</div>
+<div class="space-y-6">
+<h5 class="font-label text-base italic text-primary">Explore</h5>
+<ul class="space-y-3">
+<li><a class="text-[#1A1A1A]/60 font-label text-base italic hover:text-[#894d0d] transition-colors" href="#">Journal</a></li>
+<li><a class="text-[#1A1A1A]/60 font-label text-base italic hover:text-[#894d0d] transition-colors" href="#">Wholesale</a></li>
+<li><a class="text-[#1A1A1A]/60 font-label text-base italic hover:text-[#894d0d] transition-colors" href="#">Shipping &amp; Returns</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h5 class="font-label text-base italic text-primary">Support</h5>
+<ul class="space-y-3">
+<li><a class="text-[#1A1A1A]/60 font-label text-base italic hover:text-[#894d0d] transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-[#1A1A1A]/60 font-label text-base italic hover:text-[#894d0d] transition-colors" href="#">Contact Us</a></li>
+<li><a class="text-[#1A1A1A]/60 font-label text-base italic hover:text-[#894d0d] transition-colors" href="#">FAQs</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h5 class="font-label text-base italic text-primary">Newsletter</h5>
+<p class="text-[#1A1A1A]/60 text-sm font-body italic">Join our circle for seasonal recipes and first access to new rituals.</p>
+<div class="flex">
+<input class="bg-transparent border-b border-outline-variant py-2 w-full focus:outline-none focus:border-primary transition-colors text-base font-body italic" placeholder="Email Address" type="email"/>
+<button class="border-b border-outline-variant px-4 hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-20 px-12 max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 border-t border-outline-variant/10 pt-8">
+<span class="text-[#1A1A1A]/60 font-label text-xs italic">© 2024 Chai With Us. The Editorial Ritual. All rights reserved.</span>
+<div class="flex gap-8 text-xs italic text-[#1A1A1A]/40 font-label">
+<a class="hover:text-primary transition-colors" href="#">Terms</a>
+<a class="hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="hover:text-primary transition-colors" href="#">Cookies</a>
+</div>
+</div>
+</footer>
+</body></html>
