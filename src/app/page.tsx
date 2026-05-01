@@ -8,7 +8,7 @@ export default function Home() {
 
           {/* Left: Logo */}
           <div className="absolute left-8 z-10 flex items-center h-full pointer-events-none">
-            <img src="/logo_transparent.png" alt="Chai With Us Logo" className="h-[150px] md:h-[200px] w-auto object-contain origin-left pointer-events-auto" />
+            <img src="/logo_transparent.png" alt="Chai With Us Logo" className="w-[130px] md:w-[180px] h-auto object-contain origin-left pointer-events-auto -mt-1.5" />
           </div>
 
           {/* Center: Links */}
