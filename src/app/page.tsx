@@ -45,8 +45,7 @@ export default function Home() {
               muted
               playsInline
             >
-              <source src="/chaiWithUsLandingPage.MOV" type="video/quicktime" />
-              <source src="/chaiWithUsLandingPage.MOV" type="video/mp4" />
+              <source src="/chaiWithUsLandingPage.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-r from-surface/60 to-transparent"></div>
           </div>
@@ -67,7 +66,7 @@ export default function Home() {
           <div className="max-w-screen-2xl mx-auto px-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
               <div className="relative aspect-[4/5] bg-surface-container-low">
-                <img className="w-full h-full object-cover grayscale-[20%]" alt="Close up of raw whole spices including cinnamon and cardamom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE2VNIV1KFP6D5pk1QPuJQuVJQIJMiCdiIE1ZpzrvNeFnh8no3HA2QVnO9A3G4FKTrJiwr0udn1kZYBRC0Vqfws2A-RBq3S9WivgLec9IsxUfOajcDzbYSPNb7Xq74Nzo3diO_-4mcBSNPRNC5_8Y2FLX9PZrCkrTmNCu6Whf59K-mF61Llq31fADGxadaMNjGVVwMkAUdFAKW2h9FXXAv7ThZa6l88kh4TLNQPsJC7hF2nmrL_EP68n5N7b7IELjnDYvzqXBQm7_P" />
+                <img className="w-full h-full object-cover" alt="Chai With Us Signature Blend product shot" src="/chaiwus-productshot.png" />
               </div>
               <div className="space-y-12">
                 <div className="space-y-4">
@@ -104,7 +103,7 @@ export default function Home() {
           <div className="max-w-screen-2xl mx-auto px-12">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 h-[700px]">
               <div className="md:col-span-2 md:row-span-2 relative group overflow-hidden cursor-pointer">
-                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Signature Chai collection packaging" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOULU080NvruXApT9lRO_Ivk7r9JJ2Eb09MWngSemASb9g8M3_8LjHeztomsRRrToG_ocl42atsjIejPni2mliEsK3CWRSIMWDOLUcb1jUsOXo_e7IYwzPOl23EasZTNkCznapC3LN3IRw-YZ1gPJdKVgHrTFMFPhyvduveKE7ZOHZ6SA15mMXXUgd2m_oZSNtmc9UMCq1gMqnpxYRG426kZ32v7Br8wlnIVk7z4L9fs047mUkfA0DLZzUlsenmDFh7EdB4exTTPH3" />
+                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Chai With Us Signature Shot" src="/chaiwus-signatureshot.png" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
                 <div className="absolute bottom-10 left-10">
                   <h3 className="text-4xl font-headline text-white mb-2 italic">Signature Chai</h3>
