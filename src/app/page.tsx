@@ -101,64 +101,31 @@ export default function Home() {
         {/* Section 3: Category Grid (Bento Style) */}
         <section className="py-24 bg-surface-container-low">
           <div className="max-w-screen-2xl mx-auto px-12">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 h-[700px]">
-              <div className="md:col-span-2 md:row-span-2 relative group overflow-hidden cursor-pointer">
+            <div className="grid grid-cols-1 md:grid-cols-[7fr_3fr] gap-6 h-[700px]">
+              <a href="https://chai-withus.com/products/signature-chai-blend" className="relative group overflow-hidden block cursor-pointer bg-[#172119]">
                 <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Chai With Us Signature Shot" src="/chaiwus-signatureshot.png" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
                 <div className="absolute bottom-10 left-10">
                   <h3 className="text-4xl font-headline text-white mb-2 italic">Signature Chai</h3>
                   <p className="text-white/80 font-label text-base italic">Explore Blends</p>
                 </div>
-              </div>
-              <div className="md:col-span-2 relative group overflow-hidden cursor-pointer">
-                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Collection of tea bundles and sets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5AvA-8PStAKP5I1aDtrJBJ5Ir8is5uta8W8_7v1yRJ9qvmyd0dMX8zH76Mym8VnsInZP_eS15ifJ7JrYbvep1Zowio4sx-iV5834r71AL2zv0w6XRWyv7N19f3E3THVqUj6owu4iowSFLs1N_kGw080ZnD-M7Kh-SnZ_99cPqLL2us1VTlOsffWuz-SMNYePqJQP5QiC302iZC3bj5ciuDX20o6GdLTAxOLaEvbHnsnRmt1YYp3myCxYkizJ20cpQY2c3vUjxfHCp" />
+              </a>
+              <a href="https://chai-withus.com/products/k2-tee" className="relative group overflow-hidden block cursor-pointer bg-[#172119]">
+                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Chai With Us Tee Shirt" src="/chaiWithUsTeeShirt.png" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
-                <div className="absolute bottom-8 left-8">
-                  <h3 className="text-3xl font-headline text-white mb-2 italic">Bundles</h3>
-                  <p className="text-white/80 font-label text-base italic">Gift The Ritual</p>
+                <div className="absolute bottom-10 left-10">
+                  <h3 className="text-4xl font-headline text-white mb-2 italic">Merch</h3>
+                  <p className="text-white/80 font-label text-base italic">Shop Accessories</p>
                 </div>
-              </div>
-              <div className="relative group overflow-hidden cursor-pointer">
-                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Ceramic chai cups and lifestyle accessories" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBehEFYkcY_bwI41nWa_kI2VisUk7vbfWyD3ftDw4It2rMXlXCsyijn9wF0UojpFnp3gz4XieJCUTwImX5MalnJzowBUdKqTLIcXdMA0PVAIjLMIUvBGsW9q5b3sxLgVh0HwB-ch-Uw7WM0X-q_kt8uKTEOMGiLJRVEkAiQW1iM2OnJFcmqZZKY4hlQiSzs6NdjVLeA260FidRc0e9Yf2YTGSwjvdFoEG_9fSAP3Gset6aWMf1AeyzQ6-u0JLLHKsgB8Rse5_9RiaSL" />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
-                <div className="absolute bottom-6 left-6">
-                  <h3 className="text-2xl font-headline text-white italic">Merch</h3>
-                </div>
-              </div>
-              <div className="relative group overflow-hidden cursor-pointer">
-                <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Elegant tea gift boxes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVBgZPzpgPGET1EzrySOniu2GcBP04FV8cpH5ud6RXYttmqmZFHvQsctn00MdHnHmejTRgESe2C_Dx276maIc_OAE58MjeObF8x7szMAFKNtDbEl3hat58L0gybpMs6Lp3QpIY68UxV5KOGTPUkwasuB9FOWlhupS4XGSffwohTJbbYoQJUJ7tJCqhAwUm451N3CrQ25GBb65ZU_aN5clDu_CC1t9_j9sUyeoz9dglpbWXjpgMWsrSv8IovOTo_oI76XGCM03k89iU" />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
-                <div className="absolute bottom-6 left-6">
-                  <h3 className="text-2xl font-headline text-white italic">Gifts</h3>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
         </section>
 
-        {/* Section 4: Brand Narrative */}
-        <section className="py-32 bg-surface">
-          <div className="max-w-4xl mx-auto px-12 text-center">
-            <span className="text-primary font-label italic text-sm mb-8 block">Our Ethos</span>
-            <h2 className="text-6xl font-headline italic text-on-surface mb-12">Beyond the Cup</h2>
-            <div className="space-y-8 text-2xl leading-relaxed text-on-surface-variant font-body italic">
-              <p>We believe that tea is more than a beverage; it is a moment of stillness in a frantic world. Every spice in our blend is sourced through direct-trade relationships with small-scale farmers who treat the earth with the same reverence we do.</p>
-              <p>From the high-altitude gardens of Assam to the spice markets of Kerala, we track every leaf. This is craftsmanship you can taste, and transparency you can trust.</p>
-            </div>
-            <div className="mt-16 pt-16 border-t border-outline-variant/20 grid grid-cols-3 gap-8">
-              <div>
-                <div className="text-primary text-4xl font-headline mb-2 italic">100%</div>
-                <div className="text-on-surface-variant font-label text-xs italic">Organic Sourcing</div>
-              </div>
-              <div>
-                <div className="text-primary text-4xl font-headline mb-2 italic">Direct</div>
-                <div className="text-on-surface-variant font-label text-xs italic">Trade Relationships</div>
-              </div>
-              <div>
-                <div className="text-primary text-4xl font-headline mb-2 italic">Pure</div>
-                <div className="text-on-surface-variant font-label text-xs italic">Whole Spices</div>
-              </div>
-            </div>
+        {/* Section 6: Social Proof */}
+        <section className="py-24 bg-surface overflow-hidden">
+          <div className="w-full">
+            <img className="w-full h-auto object-cover" alt="Customer Testimonial" src="/chaiWithUsFrame.png" />
           </div>
         </section>
 
@@ -204,61 +171,32 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Section 6: Social Proof */}
-        <section className="py-32 bg-surface overflow-hidden">
-          <div className="max-w-4xl mx-auto px-12">
-            <div className="text-center relative">
-              <span className="material-symbols-outlined text-primary/20 text-8xl absolute -top-12 -left-12 select-none" data-icon="format_quote">format_quote</span>
-              <div className="relative z-10">
-                <p className="text-4xl font-headline italic leading-snug mb-8 text-on-surface">
-                  &quot;A truly transformative experience. This isn&apos;t just tea; it&apos;s a sensory journey that has become the most cherished part of my morning. The spices are so vibrant, you can tell they are fresh.&quot;
-                </p>
-                <div className="font-label text-base italic text-primary">Elena Rodriguez — Verified Enthusiast</div>
-              </div>
+        {/* Section 4: Brand Narrative */}
+        <section className="py-32 bg-surface">
+          <div className="max-w-4xl mx-auto px-12 text-center">
+            <span className="text-primary font-label italic text-sm mb-8 block">Our Ethos</span>
+            <h2 className="text-6xl font-headline italic text-on-surface mb-12">Beyond the Cup</h2>
+            <div className="space-y-8 text-2xl leading-relaxed text-on-surface-variant font-body italic">
+              <p>We believe that tea is more than a beverage; it is a moment of stillness in a frantic world. Every spice in our blend is sourced through direct-trade relationships with small-scale farmers who treat the earth with the same reverence we do.</p>
+              <p>From the high-altitude gardens of Assam to the spice markets of Kerala, we track every leaf. This is craftsmanship you can taste, and transparency you can trust.</p>
             </div>
-            <div className="flex justify-center gap-4 mt-12">
-              <button className="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-surface-container transition-colors">
-                <span className="material-symbols-outlined text-sm" data-icon="chevron_left">chevron_left</span>
-              </button>
-              <button className="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-surface-container transition-colors">
-                <span className="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
-              </button>
+            <div className="mt-16 pt-16 border-t border-outline-variant/20 grid grid-cols-3 gap-8">
+              <div>
+                <div className="text-primary text-4xl font-headline mb-2 italic">100%</div>
+                <div className="text-on-surface-variant font-label text-xs italic">Organic Sourcing</div>
+              </div>
+              <div>
+                <div className="text-primary text-4xl font-headline mb-2 italic">Direct</div>
+                <div className="text-on-surface-variant font-label text-xs italic">Trade Relationships</div>
+              </div>
+              <div>
+                <div className="text-primary text-4xl font-headline mb-2 italic">Pure</div>
+                <div className="text-on-surface-variant font-label text-xs italic">Whole Spices</div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Section 7: The Ritual Subscription */}
-        <section className="py-24">
-          <div className="max-w-screen-2xl mx-auto px-12">
-            <div className="bg-primary/5 p-16 md:p-24 flex flex-col md:flex-row items-center gap-16">
-              <div className="flex-1 space-y-8">
-                <span className="text-primary font-label italic text-sm">Never Run Dry</span>
-                <h2 className="text-5xl font-headline text-on-surface italic">The Ritual Subscription</h2>
-                <ul className="space-y-4">
-                  <li className="flex items-center gap-4 text-on-surface-variant text-xl italic">
-                    <span className="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
-                    Save 15% on every shipment
-                  </li>
-                  <li className="flex items-center gap-4 text-on-surface-variant text-xl italic">
-                    <span className="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
-                    Flexible delivery cycles (2, 4, or 8 weeks)
-                  </li>
-                  <li className="flex items-center gap-4 text-on-surface-variant text-xl italic">
-                    <span className="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
-                    Early access to seasonal spice blends
-                  </li>
-                </ul>
-                <button className="px-12 py-5 bg-primary text-on-primary rounded-sm font-label italic text-lg hover:bg-primary-container transition-colors">Subscribe &amp; Save</button>
-              </div>
-              <div className="flex-1">
-                <div className="relative">
-                  <div className="absolute -inset-4 bg-primary/10 -rotate-2"></div>
-                  <img className="relative z-10 w-full h-auto grayscale-[10%] shadow-2xl" alt="Beautifully packaged tea delivery box" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjoBo09PJGTFwLXOLuXutHzuzCErcHHlurlWt449MInwwROg-VRqI0cusMeij4q4bl1W_yXfjOkjGQPQK0021m6GLneLzZs398p6KQbfBPP8It7EszkQ-yaqu-AkKRdGoU_685olTgYGN44clxCzW8biBUr5GohYroaYCL7ndsLr2jTUEBxf7Te30_FvngJveHQcKUujVMc3pmy1_-OTSRWi1qeveFh469UHFZMm8v36A5lLTuIP73sQb8jp5B78LS3KVrEnitpoZ_" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Section 8: Instagram Community */}
         <section className="py-24 bg-surface">
