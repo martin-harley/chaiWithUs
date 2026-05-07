@@ -171,32 +171,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Section 4: Brand Narrative */}
-        <section className="py-32 bg-surface">
-          <div className="max-w-4xl mx-auto px-12 text-center">
-            <span className="text-primary font-label italic text-sm mb-8 block">Our Ethos</span>
-            <h2 className="text-6xl font-headline italic text-on-surface mb-12">Beyond the Cup</h2>
-            <div className="space-y-8 text-2xl leading-relaxed text-on-surface-variant font-body italic">
-              <p>We believe that tea is more than a beverage; it is a moment of stillness in a frantic world. Every spice in our blend is sourced through direct-trade relationships with small-scale farmers who treat the earth with the same reverence we do.</p>
-              <p>From the high-altitude gardens of Assam to the spice markets of Kerala, we track every leaf. This is craftsmanship you can taste, and transparency you can trust.</p>
-            </div>
-            <div className="mt-16 pt-16 border-t border-outline-variant/20 grid grid-cols-3 gap-8">
-              <div>
-                <div className="text-primary text-4xl font-headline mb-2 italic">100%</div>
-                <div className="text-on-surface-variant font-label text-xs italic">Organic Sourcing</div>
-              </div>
-              <div>
-                <div className="text-primary text-4xl font-headline mb-2 italic">Direct</div>
-                <div className="text-on-surface-variant font-label text-xs italic">Trade Relationships</div>
-              </div>
-              <div>
-                <div className="text-primary text-4xl font-headline mb-2 italic">Pure</div>
-                <div className="text-on-surface-variant font-label text-xs italic">Whole Spices</div>
-              </div>
-            </div>
-          </div>
-        </section>
-
 
         {/* Section 8: Instagram Community */}
         <section className="py-24 bg-surface">
